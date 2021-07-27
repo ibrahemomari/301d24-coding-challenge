@@ -10,7 +10,11 @@ Hint: You can use the array function reverse
 
 const reverseString = (str) => {
     // Solution code here...
-
+    let reverse=''
+    for(let i=str.length-1;i>=0;i--){
+        reverse+=str[i];
+    }
+    return reverse;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -26,7 +30,10 @@ Output: ['a','b','c','d','e','f']
 
 const addInTheMiddle = (arr, val) => {
     // Solution code here...
-
+    let index=(Math.round(arr.length/2));
+    console.log(typeof(index));
+    arr.splice(index,0,val);
+    return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
